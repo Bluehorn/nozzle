@@ -32,7 +32,7 @@ setup(
     packages=find_packages(exclude=['contrib', 'docs', 'tests*']),
     # dev and test requirements, install via
     # $ pip install -e .[dev,test]
-    extras_require = {
+    extras_require={
         'dev': ['check-manifest'],
         'test': ['pytest'],
     },
