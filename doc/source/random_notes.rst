@@ -2,6 +2,16 @@ Random notes
 ============
 
 
+Injection keys
+--------------
+
+Probably the next thing to fix is specifying the injection keys that are supported for now and how they are
+converted to strings: If a ``Database`` object is inserted, then that should be the stringified value of the
+injection key because the string format will usually be shown in context.
+
+The representation should just add ``<nozzle.Key: >`` around the stringified value.
+
+
 More abstraction
 ----------------
 
