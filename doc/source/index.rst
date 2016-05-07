@@ -13,6 +13,7 @@ Contents:
 
    alternatives
    decorators
+   random_notes
 
 
 Indices and tables
