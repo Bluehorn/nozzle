@@ -43,6 +43,15 @@ class Key(object):
     def __repr__(self):
         return "<Key {0}>".format(self._requested_type)
 
+    def __hash__(self):
+        return hash(self._requested_type)
+
+    def __eq__(self, other):
+        return type(other) == type(self) and other._requested_type == self._requested_type
+
+    def __ne__(self, other):
+        return not (self == other)
+
     @property
     def requested_type(self):
         """
